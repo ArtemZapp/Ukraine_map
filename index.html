@@ -1,3 +1,7 @@
+<style type="text/css">
+	
+</style>
+
 <div class="container_map"><svg width="760" height="508" viewBox="0 0 760 508" fill="none" class="aligncenter" xmlns="http://www.w3.org/2000/svg">
 	<defs>
 	    <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4" style="transform: rotate(90deg);">
@@ -180,7 +184,7 @@
 
 <script type="text/javascript">
 
-map_path_2.onmouseover  = map_path_2.onmouseout = map_path_2.click = map_path_2.onclick = handler;
+map_path_2.onmouseover  = map_path_2.onmouseout = map_path_2.onclick = handler;
 
 function handler(event) {
   	if (event.type == 'mouseover') {
@@ -204,25 +208,6 @@ function handler(event) {
   	}
   	if (event.type == 'mouseout') {
   		console.log('mouseout');
-	  	if(event.target.id.substring(0,3) == "reg"){
-	  		let element = document.getElementById('title_'+event.target.id);
-	  		element.style.fill = '#7e7e7e';
-	    	event.target.style.fill = '#ebebeb';
-	    }
-	    if(event.target.id.substring(0,3) == "tit"){
-	  		let element = document.getElementById(event.target.id.substring(6));
-	  		event.target.style.fill = '#7e7e7e';
-	    	element.style.fill = '#ebebeb';
-	    }
-		if(event.target.id.substring(0,3) == "occ"){
-	  		let element_1 = document.getElementById('title_'+event.target.id.substring(4));
-	    	element_1.style.fill = '#7e7e7e';
-	  		let element_2 = document.getElementById(event.target.id.substring(4));
-	  		element_2.style.fill = '#ebebeb';
-	    }
-  	}
-  	if (event.type == 'click') {
-  		console.log('click');
 	  	if(event.target.id.substring(0,3) == "reg"){
 	  		let element = document.getElementById('title_'+event.target.id);
 	  		element.style.fill = '#7e7e7e';
